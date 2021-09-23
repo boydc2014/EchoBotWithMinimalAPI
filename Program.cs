@@ -5,8 +5,8 @@ using Microsoft.Bot.Schema;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-var msAppId = "e2a75787-8ac9-4d5f-8f2f-e976e77f7730";
-var msPwd = "6bk7Q~JsPVYBps1Vfez_u_u0l5Qkfue54V-D9";
+var msAppId = "<your microsoft app id>";
+var msPwd = "<your microsoft password>";
 
 app.MapPost("/api/messages", async (Activity activity, HttpContext context) => {
     try 
